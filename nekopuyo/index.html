@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ea">
+  <title>ねこぷよ</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="src/config.js"></script>
+  <script defer src="src/engine.js"></script>
+  <script defer src="src/renderer.js"></script>
+  <script defer src="src/input.js"></script>
+  <script defer src="src/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="wordmark" href="./index.html" aria-label="ねこぷよ ホーム"><span class="paw" aria-hidden="true">✿</span> NEKO PUYO</a>
+      <span class="header-note">猫の、くっつくパズル。</span>
+      <span class="phase-tag">ひとりあそび <span> / PHASE 01</span></span>
+    </header>
+
+    <main class="game-layout">
+      <aside class="intro">
+        <div class="intro-copy">
+          <p class="eyebrow">A LITTLE COZY PUZZLE</p>
+          <h1 data-game-title>ねこぷよ</h1>
+          <p class="catchphrase">むぎゅっと、<br>つながる。</p>
+          <p class="description">同じ猫を、4匹つなげて。<br>小さな「ポン」が、連鎖になる。</p>
+        </div>
+        <canvas id="family" class="family" aria-label="青い縦線、緑のしま、オレンジのハチワレ、黄色のまる、桃色のハートの5種類の猫"></canvas>
+        <section class="how-to" aria-labelledby="how-title">
+          <h2 id="how-title">あそびかた <span>KEY GUIDE</span></h2>
+          <div class="key-row"><span><kbd>←</kbd> <kbd>→</kbd></span><span>左右に動かす</span></div>
+          <div class="key-row"><span><kbd>↑</kbd> <span class="or">/</span> <kbd>X</kbd></span><span>右に回す</span></div>
+          <div class="key-row"><span><kbd>Z</kbd></span><span>左に回す</span></div>
+          <div class="key-row"><span><kbd>↓</kbd></span><span>ゆっくり落とす</span></div>
+          <div class="key-row"><span><kbd class="wide-key">Space</kbd></span><span>すとんと落とす</span></div>
+          <p class="key-foot"><kbd>P</kbd> 一時停止 <span>・</span> <kbd>R</kbd> はじめから</p>
+        </section>
+      </aside>
+
+      <section class="play-area" aria-label="ゲーム盤面">
+        <div class="board-heading"><span><i class="status-dot"></i><span id="state-label">準備できた？</span></span><span>6 × 12</span></div>
+        <div class="board-frame" id="board-frame">
+          <canvas id="board" role="img" aria-label="6列12段の猫パズル盤面"></canvas>
+          <div id="chain-toast" class="chain-toast" aria-hidden="true"></div>
+          <div id="overlay" class="overlay">
+            <div class="overlay-card">
+              <p class="overlay-eyebrow" id="overlay-eyebrow">LET'S GET COZY</p>
+              <canvas id="welcome-cats" aria-hidden="true"></canvas>
+              <h2 id="overlay-title">のんびり、ひと勝負。</h2>
+              <p id="overlay-description">2匹ずつ、ころん。<br>同じ猫を4匹つなげよう。</p>
+              <button id="main-action" class="button primary">あそぶ <span aria-hidden="true">→</span></button>
+              <p id="start-hint" class="start-hint">Enter キーでもスタート</p>
+            </div>
+          </div>
+        </div>
+        <p class="board-caption"><span aria-hidden="true">◇</span> うすい猫は、着地のめじるし。</p>
+      </section>
+
+      <aside class="dashboard">
+        <section class="next-card" aria-label="次の猫">
+          <div class="card-heading"><h2>NEXT</h2><span>次のふたり</span></div>
+          <canvas id="next" aria-label="次に落ちる2匹"></canvas>
+          <p>どこに、くっつける？</p>
+        </section>
+        <section class="score-card" aria-label="成績">
+          <h2>SCORE</h2>
+          <p class="score" id="score">0</p>
+          <div class="stat-row"><span>最大連鎖</span><p><strong id="max-chain">0</strong> <span>れんさ</span></p></div>
+          <div class="stat-row"><span>消した猫</span><p><strong id="cleared-count">0</strong> <span>匹</span></p></div>
+        </section>
+        <div class="game-actions">
+          <button id="pause" class="button secondary" disabled><span aria-hidden="true">Ⅱ</span> 一時停止 <kbd>P</kbd></button>
+          <button id="restart" class="button quiet"><span aria-hidden="true">↻</span> はじめから <kbd>R</kbd></button>
+        </div>
+        <div class="little-tip"><span class="tip-mark" aria-hidden="true">✧</span><p>つなぐのは、たてとよこ。<br>ななめは、あと一歩。</p></div>
+      </aside>
+
+      <nav class="touch-controls" aria-label="タッチ操作">
+        <button data-action="left" aria-label="左に移動">←</button>
+        <button data-action="right" aria-label="右に移動">→</button>
+        <button data-action="rotateLeft" aria-label="左回転">↶</button>
+        <button data-action="rotateRight" aria-label="右回転">↷</button>
+        <button data-action="softDrop" aria-label="ソフトドロップ">↓</button>
+        <button data-action="hardDrop" aria-label="ハードドロップ">⇓</button>
+      </nav>
+    </main>
+    <footer><span>ちいさな猫と、ひとやすみ。</span><span>4匹でポン。つづけば、れんさ。</span></footer>
+    <p class="sr-only" id="announcement" aria-live="polite"></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f3ea">
+  <title>ねこぽん — 猫、ときどき神様。</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar"><a class="brand" href="#" id="home">ねこぽん<span>猫、ときどき神様。</span></a><div class="audio-controls"><button id="bgm" class="pill" aria-pressed="false">BGM OFF</button><button id="se" class="pill" aria-pressed="true">SE ON</button></div></header>
+    <main id="title-screen" class="title-screen">
+      <section class="intro"><p class="eyebrow">のんびり、ころころ、ひとやすみ。</p><h1>ねこぽん<span class="title-dot">。</span></h1><p class="lead">猫と猫が出会ったら、<br>ちょっと大きな猫になる。</p><p class="intro-note">ぽん、と落として、ゆるく合体。<br>箱のなかで、神様まで育てよう。</p>
+        <div class="mode-buttons"><button id="normal" class="primary">通常モード <span>猫神様をふたつ、ひとつに。</span><b aria-hidden="true">→</b></button><button id="endless" class="secondary">エンドレス <span>猫のいるかぎり、のんびり。</span><b aria-hidden="true">↗</b></button><button id="special" class="secondary" aria-haspopup="dialog">特殊モード <b aria-hidden="true">＋</b></button></div>
+        <div class="title-links"><button id="help-title" class="text-button">遊び方</button><button id="records" class="text-button">記録を見る</button></div>
+        <p class="lifetime">これまでに落とした猫 <strong id="title-drops">0</strong> 匹</p>
+      </section>
+      <section class="hero-art" aria-label="箱に集まった、まるい猫たち"><div class="hero-label">今日も、猫日和。</div><canvas id="hero" width="540" height="570"></canvas><p>小さな猫から、まだ見ぬ猫へ。</p></section>
+    </main>
+    <main id="play-screen" class="play-screen" hidden>
+      <aside class="stats-panel panel">
+        <div class="mode-row"><span class="eyebrow" id="mode-label">通常モード</span><span class="status-dot"></span></div>
+        <div class="score-block"><label>スコア</label><strong id="score">0</strong><div class="best-row">BEST <span id="best">0</span></div></div>
+        <div class="next-block"><label>NEXT</label><canvas id="next-cat" width="150" height="105"></canvas><strong id="next-name">チビ</strong></div>
+        <div id="play-controls" class="play-controls">
+          <div class="small-stats"><p>今回の猫 <strong><span id="drops">0</span> 匹</strong></p><p>通算の猫 <strong><span id="total-drops">0</span> 匹</strong></p></div>
+          <button id="pause" class="secondary">一時停止 <span aria-hidden="true">Ⅱ</span></button>
+        </div>
+      </aside>
+      <section class="board-column"><div class="board-heading"><span id="current-name">チビを落とす</span><span id="ready">ぽん、とどうぞ</span></div><div class="board-shell"><canvas id="board" width="480" height="660" tabindex="0" role="application" aria-label="猫を落とす箱。左右キーで移動、SpaceまたはEnterで落下。PまたはEscapeで一時停止。"></canvas><div id="toast" class="toast" aria-live="polite"></div></div><p class="board-caption" id="board-caption">同じ猫が出会うと、ひとつ大きく。</p></section>
+      <aside class="guide-panel panel"><div class="guide-heading"><h2>猫のあゆみ</h2><span id="found-count">0 / 10</span></div><p class="muted">出会った猫を、少しずつ。</p><ol id="catalog" class="catalog"></ol><div class="mini-help"><h3>あそびかた</h3><p>左右にねらって、クリック。<br>同じ猫どうしで、ぽん。</p><button id="help-play" class="text-button">操作をくわしく →</button></div></aside>
+      <div class="mobile-tools"><button id="collection" class="secondary">猫のあゆみ</button><button id="help-mobile" class="secondary">遊び方</button></div>
+    </main>
+    <footer id="footer">急がなくても、猫は待っています。</footer>
+    <p id="save-warning" class="save-warning" hidden>保存できないため、記録はこの画面を閉じるまで有効です。</p>
+  </div>
+  <dialog id="modal"><div class="modal-content"><div id="modal-body"></div><div id="modal-actions" class="modal-actions"></div></div></dialog>
+  <script src="src/config.js"></script><script src="src/modes.js"></script><script src="src/physics.js"></script><script src="src/engine.js"></script><script src="src/storage.js"></script><script src="src/renderer.js"></script><script src="src/audio.js"></script><script src="src/app.js"></script>
+</body>
+</html>

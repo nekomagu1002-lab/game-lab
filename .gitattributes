@@ -1,0 +1,11 @@
+* text=auto
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+# Preserve the original game files byte-for-byte, including line endings.
+/nekopuyo/** -text
+/nekopon/** -text
+/cat-clicker/** -text
