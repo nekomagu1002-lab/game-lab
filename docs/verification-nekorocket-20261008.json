@@ -1,0 +1,784 @@
+{
+  "date": "2026-10-08T12:12:11.307Z",
+  "scope": "NekoRocket runtime-only public copy /game-lab/ HTTP; no source runtime served",
+  "passed": true,
+  "checks": [
+    "HTTP top: four cards and 04 GAMES",
+    "Top layout 1920x1080",
+    "Top layout 1600x900",
+    "Top layout 1366x768",
+    "Top layout 900x900",
+    "Top layout 390x844",
+    "Card navigation and title startup",
+    "Stage selection and normal game startup",
+    "Sound ON through real button",
+    "WAV stage jingle play() started",
+    "HTTP MIDI early started; AudioContext running",
+    "MIDI audio signal nonzero",
+    "Game layout 1920x1080",
+    "Game layout 1600x900",
+    "Game layout 1366x768",
+    "Actual pointer click adjacent exchange",
+    "Actual pointer multi-cell vertical drag and release",
+    "Horizontal ignition via actual exchange",
+    "Vertical ignition via actual exchange",
+    "Airborne re-ignition CHAIN 2 via actual exchange",
+    "Actual occupancy switches early to late MIDI",
+    "Actual occupancy switches late to early MIDI",
+    "Danger line counts; warning shown",
+    "Danger limit produces GAME OVER",
+    "Real restart button",
+    "Real title return button",
+    "Missing title and stage-select BGM warn without blocking scenes",
+    "No unexpected runtime 404; known absent BGM probes only",
+    "No local sidecars or development references",
+    "Source 579 files unchanged by SHA-256",
+    "Existing 24 game runtime files unchanged",
+    "31 copied files byte-identical; no development files",
+    "55 manifest entries match current files"
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "warnings": [
+    "[BGM] title: mp3: Missing or unsupported media: ./assets/audio/bgm/common/title.mp3 / mid: MIDI missing: ./assets/audio/bgm/common/title.mid",
+    "[BGM] stage_select: mp3: Missing or unsupported media: ./assets/audio/bgm/common/stage_select.mp3 / mid: MIDI missing: ./assets/audio/bgm/common/stage_select.mid"
+  ],
+  "failures": [],
+  "base": "http://127.0.0.1:59410/game-lab/",
+  "browser": "154.0.4258.62",
+  "layout": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "columns": "260.5px 260.5px 260.5px 260.5px",
+      "cards": [
+        {
+          "x": 412,
+          "y": 395.765625,
+          "width": 260.5,
+          "height": 405.375
+        },
+        {
+          "x": 690.5,
+          "y": 395.765625,
+          "width": 260.5,
+          "height": 405.375
+        },
+        {
+          "x": 969,
+          "y": 395.765625,
+          "width": 260.5,
+          "height": 405.375
+        },
+        {
+          "x": 1247.5,
+          "y": 395.765625,
+          "width": 260.5,
+          "height": 405.375
+        }
+      ]
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "scrollWidth": 1600,
+      "scrollHeight": 900,
+      "columns": "260.5px 260.5px 260.5px 260.5px",
+      "cards": [
+        {
+          "x": 252,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        },
+        {
+          "x": 530.5,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        },
+        {
+          "x": 809,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        },
+        {
+          "x": 1087.5,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "columns": "260.5px 260.5px 260.5px 260.5px",
+      "cards": [
+        {
+          "x": 135,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        },
+        {
+          "x": 413.5,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        },
+        {
+          "x": 692,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        },
+        {
+          "x": 970.5,
+          "y": 290.15625,
+          "width": 260.5,
+          "height": 353.375
+        }
+      ]
+    },
+    {
+      "width": 900,
+      "height": 900,
+      "scrollWidth": 900,
+      "scrollHeight": 1130,
+      "columns": "406px 406px",
+      "cards": [
+        {
+          "x": 32,
+          "y": 290.15625,
+          "width": 406,
+          "height": 353.375
+        },
+        {
+          "x": 462,
+          "y": 290.15625,
+          "width": 406,
+          "height": 353.375
+        },
+        {
+          "x": 32,
+          "y": 667.53125,
+          "width": 406,
+          "height": 353.375
+        },
+        {
+          "x": 462,
+          "y": 667.53125,
+          "width": 406,
+          "height": 353.375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 2042,
+      "columns": "350px",
+      "cards": [
+        {
+          "x": 20,
+          "y": 363.5625,
+          "width": 350,
+          "height": 359.5625
+        },
+        {
+          "x": 20,
+          "y": 747.125,
+          "width": 350,
+          "height": 359.5625
+        },
+        {
+          "x": 20,
+          "y": 1130.6875,
+          "width": 350,
+          "height": 359.5625
+        },
+        {
+          "x": 20,
+          "y": 1514.25,
+          "width": 350,
+          "height": 359.5625
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "board": {
+        "x": 707.5625,
+        "y": 239.578125,
+        "width": 504.875,
+        "height": 820.421875,
+        "top": 239.578125,
+        "right": 1212.4375,
+        "bottom": 1060,
+        "left": 707.5625
+      }
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "scrollWidth": 1600,
+      "scrollHeight": 900,
+      "board": {
+        "x": 602.953125,
+        "y": 239.578125,
+        "width": 394.09375,
+        "height": 640.421875,
+        "top": 239.578125,
+        "right": 997.046875,
+        "bottom": 880,
+        "left": 602.953125
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "board": {
+        "x": 514.5,
+        "y": 210.375,
+        "width": 337,
+        "height": 547.625,
+        "top": 210.375,
+        "right": 851.5,
+        "bottom": 758,
+        "left": 514.5
+      }
+    }
+  ],
+  "midiAmplitude": 0.10758339613676071,
+  "expectedMissing": [
+    "/favicon.ico",
+    "/game-lab/nekorocket/assets/audio/bgm/standard/stage01_standard_early.mp3",
+    "/game-lab/nekorocket/assets/audio/bgm/standard/stage01_standard_late.mp3",
+    "/game-lab/nekorocket/assets/audio/bgm/common/title.mp3",
+    "/game-lab/nekorocket/assets/audio/bgm/common/title.mid",
+    "/game-lab/nekorocket/assets/audio/bgm/common/stage_select.mp3",
+    "/game-lab/nekorocket/assets/audio/bgm/common/stage_select.mid"
+  ],
+  "wavHistory": [
+    {
+      "key": "stageJingle",
+      "status": "requested",
+      "reason": "",
+      "time": 199.70000004768372,
+      "set": "standard"
+    },
+    {
+      "key": "stageJingle",
+      "status": "started",
+      "reason": "",
+      "time": 226.70000004768372,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "requested",
+      "reason": "",
+      "time": 3579.5999999046326,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "started",
+      "reason": "",
+      "time": 3583.2999999523163,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "requested",
+      "reason": "",
+      "time": 3729.9000000953674,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "started",
+      "reason": "",
+      "time": 3732.9000000953674,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "dropped",
+      "reason": "cooldown",
+      "time": 3779.9000000953674,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "dropped",
+      "reason": "voice-limit",
+      "time": 3830.5999999046326,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "requested",
+      "reason": "",
+      "time": 3880.5,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "started",
+      "reason": "",
+      "time": 3886.0999999046326,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "requested",
+      "reason": "",
+      "time": 4148.099999904633,
+      "set": "standard"
+    },
+    {
+      "key": "igniteSmall",
+      "status": "requested",
+      "reason": "",
+      "time": 4148.700000047684,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "started",
+      "reason": "",
+      "time": 4156.700000047684,
+      "set": "standard"
+    },
+    {
+      "key": "igniteSmall",
+      "status": "started",
+      "reason": "",
+      "time": 4156.700000047684,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "requested",
+      "reason": "",
+      "time": 4346.400000095367,
+      "set": "standard"
+    },
+    {
+      "key": "igniteVertical",
+      "status": "requested",
+      "reason": "",
+      "time": 4347.599999904633,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "started",
+      "reason": "",
+      "time": 4350.900000095367,
+      "set": "standard"
+    },
+    {
+      "key": "igniteVertical",
+      "status": "started",
+      "reason": "",
+      "time": 4351.299999952316,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "requested",
+      "reason": "",
+      "time": 4546.599999904633,
+      "set": "standard"
+    },
+    {
+      "key": "igniteSmall",
+      "status": "requested",
+      "reason": "",
+      "time": 4546.900000095367,
+      "set": "standard"
+    },
+    {
+      "key": "chain2",
+      "status": "requested",
+      "reason": "",
+      "time": 4547.299999952316,
+      "set": "standard"
+    },
+    {
+      "key": "swap",
+      "status": "started",
+      "reason": "",
+      "time": 4560.400000095367,
+      "set": "standard"
+    },
+    {
+      "key": "igniteSmall",
+      "status": "started",
+      "reason": "",
+      "time": 4560.400000095367,
+      "set": "standard"
+    },
+    {
+      "key": "chain2",
+      "status": "started",
+      "reason": "",
+      "time": 4561.200000047684,
+      "set": "standard"
+    },
+    {
+      "key": "dangerStart",
+      "status": "requested",
+      "reason": "",
+      "time": 7064.700000047684,
+      "set": "standard"
+    },
+    {
+      "key": "dangerStart",
+      "status": "started",
+      "reason": "",
+      "time": 7084.299999952316,
+      "set": "standard"
+    },
+    {
+      "key": "gameOver",
+      "status": "requested",
+      "reason": "",
+      "time": 12863.5,
+      "set": "standard"
+    },
+    {
+      "key": "gameOver",
+      "status": "started",
+      "reason": "",
+      "time": 12865,
+      "set": "standard"
+    },
+    {
+      "key": "stageJingle",
+      "status": "requested",
+      "reason": "",
+      "time": 13101.5,
+      "set": "standard"
+    },
+    {
+      "key": "stageJingle",
+      "status": "started",
+      "reason": "",
+      "time": 13114.099999904633,
+      "set": "standard"
+    }
+  ],
+  "bgmHistory": [
+    {
+      "track": "stage01_standard_early",
+      "event": "resolved",
+      "detail": "mid",
+      "time": 2.1642000000476838
+    },
+    {
+      "track": "stage01_standard_early",
+      "event": "playing",
+      "detail": "mid",
+      "time": 2.1735999999046327
+    },
+    {
+      "track": "stage01_standard_late",
+      "event": "resolved",
+      "detail": "mid",
+      "time": 4.608799999952316
+    },
+    {
+      "track": "stage01_standard_late",
+      "event": "playing",
+      "detail": "mid",
+      "time": 4.6095
+    },
+    {
+      "track": "stage01_standard_early",
+      "event": "playing",
+      "detail": "mid",
+      "time": 5.829599999904633
+    },
+    {
+      "track": "stage01_standard_late",
+      "event": "playing",
+      "detail": "mid",
+      "time": 7.074299999952316
+    },
+    {
+      "track": "title",
+      "event": "warning",
+      "detail": "mp3: Missing or unsupported media: ./assets/audio/bgm/common/title.mp3 / mid: MIDI missing: ./assets/audio/bgm/common/title.mid",
+      "time": 13.151
+    },
+    {
+      "track": "stage_select",
+      "event": "warning",
+      "detail": "mp3: Missing or unsupported media: ./assets/audio/bgm/common/stage_select.mp3 / mid: MIDI missing: ./assets/audio/bgm/common/stage_select.mid",
+      "time": 13.182599999904632
+    }
+  ],
+  "requests": [
+    {
+      "path": "/game-lab/",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/assets/css/style.css",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/style.css",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/config.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/engine.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/js/audio/sound-manifest.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/js/audio/sound-manager.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/js/audio/bgm-manifest.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/js/audio/bgm-manager.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/js/audio/game-audio.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/app.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_stage_jingle.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_cat_land.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_ignite_small.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_ignite_large.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_ignite_vertical.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_chain_2.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_chain_3.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_chain_4_plus.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_fusion.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_block_land_small.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_block_land_medium.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_block_land_large.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_launch_success.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_fast_on.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_fast_off.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_danger_start.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_game_over.wav",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/standard/standard_swap.wav",
+      "status": 200
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/standard/stage01_standard_early.mp3",
+      "status": 404
+    },
+    {
+      "path": "/game-lab/nekorocket/js/audio/midi-player.js",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/standard/stage01_standard_early.mid",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/standard/stage01_standard_late.mp3",
+      "status": 404
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/standard/stage01_standard_late.mid",
+      "status": 200
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/common/title.mp3",
+      "status": 404
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/common/title.mid",
+      "status": 404
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/common/stage_select.mp3",
+      "status": 404
+    },
+    {
+      "path": "/game-lab/nekorocket/assets/audio/bgm/common/stage_select.mid",
+      "status": 404
+    }
+  ],
+  "audit": {
+    "sourcePreservedFiles": 579,
+    "existingGameRuntimeUnchanged": 24,
+    "copyFiles": 31,
+    "copyBytes": 1650835,
+    "hashesEqual": true,
+    "manifestEntries": 55,
+    "modifiedFiles": [
+      ".gitattributes",
+      "assets/css/style.css",
+      "docs/copy-manifest.json",
+      "docs/PUBLICATION.md",
+      "index.html",
+      "README.md"
+    ],
+    "newFiles": [
+      "nekorocket/app.js",
+      "nekorocket/assets/audio/bgm/standard/stage01_standard_early.mid",
+      "nekorocket/assets/audio/bgm/standard/stage01_standard_late.mid",
+      "nekorocket/assets/audio/standard/standard_block_land_large.wav",
+      "nekorocket/assets/audio/standard/standard_block_land_medium.wav",
+      "nekorocket/assets/audio/standard/standard_block_land_small.wav",
+      "nekorocket/assets/audio/standard/standard_cat_land.wav",
+      "nekorocket/assets/audio/standard/standard_chain_2.wav",
+      "nekorocket/assets/audio/standard/standard_chain_3.wav",
+      "nekorocket/assets/audio/standard/standard_chain_4_plus.wav",
+      "nekorocket/assets/audio/standard/standard_danger_start.wav",
+      "nekorocket/assets/audio/standard/standard_fast_off.wav",
+      "nekorocket/assets/audio/standard/standard_fast_on.wav",
+      "nekorocket/assets/audio/standard/standard_fusion.wav",
+      "nekorocket/assets/audio/standard/standard_game_over.wav",
+      "nekorocket/assets/audio/standard/standard_ignite_large.wav",
+      "nekorocket/assets/audio/standard/standard_ignite_small.wav",
+      "nekorocket/assets/audio/standard/standard_ignite_vertical.wav",
+      "nekorocket/assets/audio/standard/standard_launch_success.wav",
+      "nekorocket/assets/audio/standard/standard_stage_jingle.wav",
+      "nekorocket/assets/audio/standard/standard_swap.wav",
+      "nekorocket/config.js",
+      "nekorocket/engine.js",
+      "nekorocket/index.html",
+      "nekorocket/js/audio/bgm-manager.js",
+      "nekorocket/js/audio/bgm-manifest.js",
+      "nekorocket/js/audio/game-audio.js",
+      "nekorocket/js/audio/midi-player.js",
+      "nekorocket/js/audio/sound-manager.js",
+      "nekorocket/js/audio/sound-manifest.js",
+      "nekorocket/style.css",
+      "docs/NEKOROCKET-20261008.md",
+      "docs/verification-nekorocket-20261008.json"
+    ],
+    "gitStatus": "Verified after explicit user approval: 6 modified publication files and new nekorocket; 9 preexisting modified game files and 2 preexisting untracked quality records retained",
+    "commit": false,
+    "push": false,
+    "gitDiffCheckPassed": true,
+    "preexistingModifiedFiles": [
+      "nekopon/index.html",
+      "nekopon/src/app.js",
+      "nekopon/src/engine.js",
+      "nekopon/src/modes.js",
+      "nekopon/style.css",
+      "nekopuyo/index.html",
+      "nekopuyo/src/app.js",
+      "nekopuyo/src/input.js",
+      "nekopuyo/styles.css"
+    ],
+    "preexistingUntrackedFiles": [
+      "docs/PUBLIC-QUALITY-20260928.md",
+      "docs/verification-20260928.json"
+    ]
+  },
+  "actualListeningCheck": "Automated Edge HTTP only; physical speaker listening, deployed HTTPS, Safari/Firefox and real phones not tested",
+  "gitStatus": "Verified after explicit user approval: 6 modified publication files and new nekorocket; 9 preexisting modified game files and 2 preexisting untracked quality records retained",
+  "commit": false,
+  "push": false
+}

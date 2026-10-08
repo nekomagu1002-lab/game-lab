@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-26",
+  "date": "2026-10-08",
   "files": [
     {
       "source": "Game-Nekopuyo/index.html",
@@ -144,6 +144,192 @@
       "destination": "cat-clicker/game.js",
       "bytes": 13847,
       "sha256": "4e4c113bfb2d785eaa32d88ecfa2e2511f592a78d2591ff891ab3a68edadd623"
+    },
+    {
+      "source": "Game-NekoRocket/index.html",
+      "destination": "nekorocket/index.html",
+      "bytes": 5117,
+      "sha256": "6cf7437f2709c242af2a5b4f44021275f959e9ff233b28c22d01bfb7750646ef"
+    },
+    {
+      "source": "Game-NekoRocket/style.css",
+      "destination": "nekorocket/style.css",
+      "bytes": 8176,
+      "sha256": "41bf971e0b6144e038317ba338b621c7464d4eb9ef4ef73d4f324445237ffd9f"
+    },
+    {
+      "source": "Game-NekoRocket/app.js",
+      "destination": "nekorocket/app.js",
+      "bytes": 32739,
+      "sha256": "b8091fc3cf33f6c409d15ec0624e9183109d7aeb433a7dc23285acf9b471487b"
+    },
+    {
+      "source": "Game-NekoRocket/engine.js",
+      "destination": "nekorocket/engine.js",
+      "bytes": 26652,
+      "sha256": "8e3f4ea4da0f9b8f7498bb22522264cd953d188ffc4e4530e779537fc824aaa0"
+    },
+    {
+      "source": "Game-NekoRocket/config.js",
+      "destination": "nekorocket/config.js",
+      "bytes": 5449,
+      "sha256": "41450fa3f2a86a47bf6c2fb13e03943f2ab399b5e702dc4d3beb4f7dcbf90833"
+    },
+    {
+      "source": "Game-NekoRocket/js/audio/sound-manifest.js",
+      "destination": "nekorocket/js/audio/sound-manifest.js",
+      "bytes": 1421,
+      "sha256": "25f7ed2fd0365bf14e3773e5c011d55114aae00ee230007ddc31b759b8f5e72b"
+    },
+    {
+      "source": "Game-NekoRocket/js/audio/sound-manager.js",
+      "destination": "nekorocket/js/audio/sound-manager.js",
+      "bytes": 9494,
+      "sha256": "42e290d71622fde3a7ba6a6f3c1714b351059fc88ceaa1e93b1039cfd3374c1d"
+    },
+    {
+      "source": "Game-NekoRocket/js/audio/game-audio.js",
+      "destination": "nekorocket/js/audio/game-audio.js",
+      "bytes": 2070,
+      "sha256": "a462ce243a67b43cf827bdbe2e2bad44ba3c462f966842c983e1ec4c0ff8bc02"
+    },
+    {
+      "source": "Game-NekoRocket/js/audio/bgm-manifest.js",
+      "destination": "nekorocket/js/audio/bgm-manifest.js",
+      "bytes": 610,
+      "sha256": "10c3f954f1daa60eef0524246fff44db7e39c5e3eba795a16dacd40d01d94f89"
+    },
+    {
+      "source": "Game-NekoRocket/js/audio/bgm-manager.js",
+      "destination": "nekorocket/js/audio/bgm-manager.js",
+      "bytes": 10406,
+      "sha256": "95d9855899d24f16d9687e214c19f4cb880eb1fd9f625f651220fe4bc33abaa6"
+    },
+    {
+      "source": "Game-NekoRocket/js/audio/midi-player.js",
+      "destination": "nekorocket/js/audio/midi-player.js",
+      "bytes": 8294,
+      "sha256": "66312e57cefb22b1dfbba3e524f7b38d13f7790c890d12e0eea931d6f8432dea"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_stage_jingle.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_stage_jingle.wav",
+      "bytes": 328168,
+      "sha256": "ce37f6ccaa6e8505f7ae5240b50179565dca33282c8beb4e2571e2784f910398"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_cat_land.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_cat_land.wav",
+      "bytes": 14220,
+      "sha256": "eb85292402ceff47ffb3fab29f9566138acb3fbfa13e74c616ed5b2b8b3edb40"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_ignite_small.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_ignite_small.wav",
+      "bytes": 23912,
+      "sha256": "171c8c747bd50d5d025e25c3a397e6e5404f8d0f4e2b72ae88db48b56bbb0377"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_ignite_large.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_ignite_large.wav",
+      "bytes": 51232,
+      "sha256": "7ad031dfd5f8250aa67547c736c04e978f55753a3d679fd892c18547134d2e57"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_ignite_vertical.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_ignite_vertical.wav",
+      "bytes": 54748,
+      "sha256": "cd980db5c998d4591e2f9659c8e3e4ff1bde1c887ab5eee3c18a5bfd0d3f8b86"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_chain_2.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_chain_2.wav",
+      "bytes": 63592,
+      "sha256": "eb4da6588890a0e3decd613a88ccf0574a301a9903ca314c0e5d1dd9c334eae6"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_chain_3.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_chain_3.wav",
+      "bytes": 92696,
+      "sha256": "8277226258ee4715737ae904e08c4d2465259df3a190ea008280e5916c0b108d"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_chain_4_plus.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_chain_4_plus.wav",
+      "bytes": 135904,
+      "sha256": "d41011489c55a48f6015bee91f8621ee8dc38b2a1c021e696a287cd766e70689"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_fusion.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_fusion.wav",
+      "bytes": 41712,
+      "sha256": "4a21999d7d60faad055a114f8cc5565ce79456dc1e5c43503c432eb77510eefb"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_block_land_small.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_block_land_small.wav",
+      "bytes": 21324,
+      "sha256": "77032b51c7bf063913d780f69f3497dcce6847327c98c7c4e30ad0257b5d4c07"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_block_land_medium.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_block_land_medium.wav",
+      "bytes": 32848,
+      "sha256": "d5e5deb1c819c7eafd45c1339c67cf9629d5a2dd75e91272c87b70380b79a240"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_block_land_large.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_block_land_large.wav",
+      "bytes": 50580,
+      "sha256": "df7ff7a566543b4139e5e62317dece62d62ffd957b2e566d4ad96b3d5efb1686"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_launch_success.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_launch_success.wav",
+      "bytes": 70648,
+      "sha256": "fe7d808d81a15dda51fe9029ae78dd5deef1a7da0c595b4fd9ff25198e11f334"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_fast_on.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_fast_on.wav",
+      "bytes": 29196,
+      "sha256": "62daac5a9132df2911a10cad41668552e5c15392a06ecb94b3555b765826a07a"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_fast_off.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_fast_off.wav",
+      "bytes": 29196,
+      "sha256": "c88892f63119b0a9327ae4f8dfc8c042e05a5a8560923833665706555359523b"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_danger_start.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_danger_start.wav",
+      "bytes": 67128,
+      "sha256": "df26b564debd5775871254adaee9fb684ee36c4a06fa85d24c497091a2608f3c"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_game_over.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_game_over.wav",
+      "bytes": 416376,
+      "sha256": "19688adafe38039ef98b1ef37286b2cef86507d5c4df76a8e4e22d6ab369448f"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/standard/standard_swap.wav",
+      "destination": "nekorocket/assets/audio/standard/standard_swap.wav",
+      "bytes": 11600,
+      "sha256": "cede27da0da2b39b9c84153abff28095667a649c69c4cde63796ee0f5e1897c6"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/bgm/standard/stage01_standard_early.mid",
+      "destination": "nekorocket/assets/audio/bgm/standard/stage01_standard_early.mid",
+      "bytes": 1955,
+      "sha256": "afff1a701c708eab4e50fc60557fe62c9c5907f1ec0d6e30ac5c81678651e62e"
+    },
+    {
+      "source": "Game-NekoRocket/assets/audio/bgm/standard/stage01_standard_late.mid",
+      "destination": "nekorocket/assets/audio/bgm/standard/stage01_standard_late.mid",
+      "bytes": 3372,
+      "sha256": "1f98230633bc9459431c291fd5c20d77561915dd39b76a9c8aa9a3a3b2f38d1d"
     }
   ]
 }
